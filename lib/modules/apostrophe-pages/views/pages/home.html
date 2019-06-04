@@ -13,5 +13,10 @@
       {% endif %}
     </h3>
     <p>This is a very bare bones Apostrophe project. Now, get to work and make a real website!</p>
+    {{ apos.area(data.page, 'body', {
+      widgets: {
+        'apostrophe-forms': {}
+      }
+    }) }}
   </div>
 {% endblock %}
