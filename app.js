@@ -11,6 +11,6 @@ var apos = require('apostrophe')({
     'apostrophe-templates': { viewsFolderFallback: path.join(__dirname, 'views') },
     'apostrophe-forms': {},
     'apostrophe-forms-widgets': {},
-    'apostrophe-forms-base-widgets': {}
+    'apostrophe-forms-text-widgets': {}
   }
 });
