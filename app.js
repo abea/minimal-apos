@@ -11,6 +11,13 @@ var apos = require('apostrophe')({
     'apostrophe-templates': { viewsFolderFallback: path.join(__dirname, 'views') },
     'apostrophe-forms': {},
     'apostrophe-forms-widgets': {},
-    'apostrophe-forms-text-widgets': {}
+    'apostrophe-forms-text-field-widgets': {},
+    'apostrophe-forms-file-field-widgets': {},
+    'apostrophe-permissions': {
+      construct: function (self, options) {
+        // Needed if you want file fields to work on public pages
+        self.addPublic(['edit-attachment']);
+      }
+    }
   }
 });
