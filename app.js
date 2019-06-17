@@ -9,9 +9,14 @@ var apos = require('apostrophe')({
 
   modules: {
     'apostrophe-templates': { viewsFolderFallback: path.join(__dirname, 'views') },
+    'apostrophe-override-options': {},
     'apostrophe-forms': {},
     'apostrophe-forms-widgets': {},
     'apostrophe-forms-text-field-widgets': {},
+    'apostrophe-forms-textarea-field-widgets': {},
+    // 'apostrophe-forms-select-field-widgets': {},
+    // 'apostrophe-forms-radio-field-widgets': {},
+    // 'apostrophe-forms-checkboxes-field-widgets': {},
     'apostrophe-forms-file-field-widgets': {},
     'apostrophe-permissions': {
       construct: function (self, options) {
