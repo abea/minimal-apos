@@ -18,11 +18,22 @@ var apos = require('apostrophe')({
     // 'apostrophe-forms-radio-field-widgets': {},
     // 'apostrophe-forms-checkboxes-field-widgets': {},
     'apostrophe-forms-file-field-widgets': {},
+    // 'apostrophe-forms-boolean-field-widgets': {},
     'apostrophe-permissions': {
       construct: function (self, options) {
         // Needed if you want file fields to work on public pages
         self.addPublic(['edit-attachment']);
       }
     }
+    // 'apostrophe-email': {
+    //   // See the nodemailer documentation, many
+    //   // different transports are available, this one
+    //   // matches how PHP does it on Linux servers
+    //   nodemailer: {
+    //     sendmail: true,
+    //     newline: 'unix',
+    //     path: '/usr/sbin/sendmail'
+    //   }
+    // }
   }
 });
