@@ -13,7 +13,8 @@
   },
   "author": "P'unk Avenue",
   "dependencies": {
-    "apostrophe": "^2.91.1"
+    "apostrophe": "^2.91.1",
+    "apostrophe-forms": "github:apostrophecms/apostrophe-forms"
   },
   "nodemonConfig": {
     "verbose": true,
