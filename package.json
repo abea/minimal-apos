@@ -1,20 +1,19 @@
 {
-  "name": "apostrophe-boilerplate",
-  "version": "2.0.0",
-  "description": "Minimal Apostrophe Boilerplate",
+  "name": "apostrophe-staging",
+  "version": "1.0.0",
+  "description": "Apostrophe Staging Site",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
+  "private": true,
   "repository": {
     "type": "git",
     "url": ""
   },
   "author": "P'unk Avenue",
-  "license": "MIT",
   "dependencies": {
-    "apostrophe": "^2.91.1",
-    "apostrophe-override-options": "^2.2.0"
+    "apostrophe": "^2.91.1"
   },
   "nodemonConfig": {
     "verbose": true,
