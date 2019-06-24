@@ -19,7 +19,6 @@ var apos = require('apostrophe')({
     'apostrophe-forms-radio-field-widgets': {},
     'apostrophe-forms-checkboxes-field-widgets': {},
     'apostrophe-forms-file-field-widgets': {},
-    // 'apostrophe-forms-params-field-widgets': {},
     // 'apostrophe-forms-boolean-field-widgets': {},
     'apostrophe-permissions': {
       construct: function (self, options) {
