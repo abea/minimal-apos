@@ -12,6 +12,7 @@ var apos = require('apostrophe')({
     'apostrophe-forms': {
       // emailSubmissions: false
     },
+    'apostrophe-forms-submit-google': {},
     'apostrophe-forms-widgets': {},
     'apostrophe-forms-text-field-widgets': {},
     'apostrophe-forms-textarea-field-widgets': {},
