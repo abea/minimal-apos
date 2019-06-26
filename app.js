@@ -13,8 +13,7 @@ const formContentWidgets = {
       'Styles', 'Bold', 'Italic', 'Link', 'Anchor', 'Unlink',
       'NumberedList', 'BulletedList'
     ]
-  },
-  'form-columns': {}
+  }
 };
 
 const apos = require('apostrophe')({

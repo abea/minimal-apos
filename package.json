@@ -14,7 +14,7 @@
   "author": "P'unk Avenue",
   "dependencies": {
     "apostrophe": "github:apostrophecms/apostrophe",
-    "apostrophe-forms": "github:apostrophecms/apostrophe-forms",
+    "apostrophe-forms": "github:apostrophecms/apostrophe-forms#feat/release-ready",
     "apostrophe-forms-submit-google": "github:apostrophecms/apostrophe-forms-submit-google",
     "apostrophe-override-options": "^2.2.0"
   },
