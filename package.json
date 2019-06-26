@@ -15,7 +15,7 @@
   "dependencies": {
     "apostrophe": "github:apostrophecms/apostrophe",
     "apostrophe-forms": "github:apostrophecms/apostrophe-forms",
-    "apostrophe-forms-submit-google": "github:apostrophecms/apostrophe-forms-submit-google#feat/submit-google"
+    "apostrophe-forms-submit-google": "github:apostrophecms/apostrophe-forms-submit-google"
   },
   "nodemonConfig": {
     "verbose": true,
