@@ -1,6 +1,23 @@
-var path = require('path');
+const path = require('path');
 
-var apos = require('apostrophe')({
+const formContentWidgets = {
+  'apostrophe-forms-text-field': {},
+  'apostrophe-forms-textarea-field': {},
+  'apostrophe-forms-file-field': {},
+  'apostrophe-forms-boolean-field': {},
+  'apostrophe-forms-select-field': {},
+  'apostrophe-forms-radio-field': {},
+  'apostrophe-forms-checkboxes-field': {},
+  'apostrophe-rich-text': {
+    toolbar: [
+      'Styles', 'Bold', 'Italic', 'Link', 'Anchor', 'Unlink',
+      'NumberedList', 'BulletedList'
+    ]
+  },
+  'form-columns': {}
+};
+
+const apos = require('apostrophe')({
   shortName: 'apos-staging',
 
   // See lib/modules for basic project-level configuration of our modules
@@ -9,11 +26,21 @@ var apos = require('apostrophe')({
 
   modules: {
     'apostrophe-templates': { viewsFolderFallback: path.join(__dirname, 'views') },
+
     'apostrophe-forms': {
-      // emailSubmissions: false
+      formWidgets: {
+        ...formContentWidgets,
+        'form-columns': {}
+      }
+    },
+    'form-columns-widgets': {
+      formContentWidgets: formContentWidgets
     },
     'apostrophe-forms-submit-google': {},
-    'apostrophe-forms-widgets': {},
+    'apostrophe-forms-widgets': {
+      // disableBaseStyles: true
+    },
+    // Form field widgets
     'apostrophe-forms-text-field-widgets': {},
     'apostrophe-forms-textarea-field-widgets': {},
     'apostrophe-forms-select-field-widgets': {},
@@ -21,7 +48,7 @@ var apos = require('apostrophe')({
     'apostrophe-forms-checkboxes-field-widgets': {},
     'apostrophe-forms-file-field-widgets': {},
     'apostrophe-forms-boolean-field-widgets': {},
-    'apostrophe-forms-submit-google': {},
+
     'apostrophe-permissions': {
       construct: function (self, options) {
         // Needed if you want file fields to work on public pages
@@ -37,6 +64,8 @@ var apos = require('apostrophe')({
         newline: 'unix',
         path: '/usr/sbin/sendmail'
       }
-    }
+    },
+
+    'apostrophe-override-options': {}
   }
 });

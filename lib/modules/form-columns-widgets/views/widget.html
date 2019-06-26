@@ -1,0 +1,11 @@
+{# {{ apos.log(data.manager.options.formContentWidgets) }} #}
+{% set formContentWidgets = apos.modules['form-columns-widgets'].getOption('formContentWidgets') %}
+<h1>TWO COLUMNS</h1>
+<div class="forms-two-col">
+  {{ apos.area(data.widget, 'left', {
+    widgets: formContentWidgets
+   }) }}
+  {{ apos.area(data.widget, 'right', {
+    widgets: formContentWidgets
+   }) }}
+</div>
