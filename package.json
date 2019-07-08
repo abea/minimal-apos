@@ -14,8 +14,8 @@
   "author": "P'unk Avenue",
   "dependencies": {
     "apostrophe": "^2.92.0",
-    "apostrophe-forms": "^1.0.0",
-    "apostrophe-forms-submit-google": "github:apostrophecms/apostrophe-forms-submit-google",
+    "apostrophe-forms": "^1.0.1",
+    "apostrophe-forms-submit-google": "^1.0.1",
     "apostrophe-override-options": "^2.2.0"
   },
   "nodemonConfig": {
