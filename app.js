@@ -47,6 +47,7 @@ const apos = require('apostrophe')({
     'apostrophe-forms-checkboxes-field-widgets': {},
     'apostrophe-forms-file-field-widgets': {},
     'apostrophe-forms-boolean-field-widgets': {},
+    'apostrophe-forms-conditional-widgets': {},
 
     'apostrophe-permissions': {
       construct: function (self, options) {
