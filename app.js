@@ -8,6 +8,7 @@ const formContentWidgets = {
   'apostrophe-forms-select-field': {},
   'apostrophe-forms-radio-field': {},
   'apostrophe-forms-checkboxes-field': {},
+  'apostrophe-forms-conditional': {},
   'apostrophe-rich-text': {
     toolbar: [
       'Styles', 'Bold', 'Italic', 'Link', 'Anchor', 'Unlink',
@@ -47,6 +48,7 @@ const apos = require('apostrophe')({
     'apostrophe-forms-checkboxes-field-widgets': {},
     'apostrophe-forms-file-field-widgets': {},
     'apostrophe-forms-boolean-field-widgets': {},
+    'apostrophe-forms-conditional-widgets': {},
 
     'apostrophe-permissions': {
       construct: function (self, options) {
