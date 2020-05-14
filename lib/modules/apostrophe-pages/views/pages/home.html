@@ -13,7 +13,7 @@
     }
   </style>
   <div class="main-content">
-    <h3>Hello world!
+    <h3>{{ data.page.title or 'Hello world!' }}
       {% if not data.user %}
         <a class="login-link" href="{{ apos.prefix }}/login">Login</a>
       {% endif %}
