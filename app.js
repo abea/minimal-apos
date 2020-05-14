@@ -8,6 +8,9 @@ var apos = require('apostrophe')({
   // configuring user accounts.
 
   modules: {
-    'apostrophe-templates': { viewsFolderFallback: path.join(__dirname, 'views') }
+    'apostrophe-templates': {
+      viewsFolderFallback: path.join(__dirname, 'views')
+    },
+    jawns: { extend: 'apostrophe-pieces' }
   }
 });
