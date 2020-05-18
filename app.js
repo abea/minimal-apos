@@ -8,6 +8,12 @@ var apos = require('apostrophe')({
   // configuring user accounts.
 
   modules: {
+    'apostrophe-db': {
+      connect: { useUnifiedTopology: true }
+    },
+    'apostrophe-express': {
+      session: { secret: 'scooby' }
+    },
     'apostrophe-templates': {
       viewsFolderFallback: path.join(__dirname, 'views')
     },
