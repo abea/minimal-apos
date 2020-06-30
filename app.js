@@ -17,6 +17,10 @@ var apos = require('apostrophe')({
     'apostrophe-templates': {
       viewsFolderFallback: path.join(__dirname, 'views')
     },
-    jawns: { extend: 'apostrophe-pieces' }
+    'jawns': { extend: 'apostrophe-pieces' },
+    'jawns-pages': { extend: 'apostrophe-pieces-pages' },
+    'persons': { extend: 'apostrophe-pieces' },
+    'persons-pages': { extend: 'apostrophe-pieces-pages' },
+    'organizations': { extend: 'apostrophe-pieces' }
   }
 });

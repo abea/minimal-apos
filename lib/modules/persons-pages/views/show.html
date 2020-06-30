@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block main %}
+  <div class="main-content">
+    <h3>{{ data.piece.title }}</h3>
+    <br />
+    {% for jawn in data.piece._jawns %}
+      <h4>{{jawn.title}}</h4>
+    {% endfor %}
+  </div>
+{% endblock %}
