@@ -9,6 +9,7 @@ const formContentWidgets = {
   'apostrophe-forms-radio-field': {},
   'apostrophe-forms-checkboxes-field': {},
   'apostrophe-forms-conditional': {},
+  'apostrophe-forms-file-field': {},
   'apostrophe-rich-text': {
     toolbar: [
       'Styles', 'Bold', 'Italic', 'Link', 'Anchor', 'Unlink',
